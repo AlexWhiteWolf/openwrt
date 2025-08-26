@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#include "rtl9303_hasivo_s1100.dtsi"
+
+/ {
+	compatible = "hasivo,s1100wp-8xgt-se", "realtek,rtl930x-soc";
+	model = "Hasivo S1100WP-8XGT-SE";
+};
+
+&i2c_mst1 {
+	status = "okay";
+
+	ethernet-pse@1a {
+		compatible = "hasivo,hs104";
+		reg = <0x1a>;
+	};
+
+	ethernet-pse@2a {
+		compatible = "hasivo,hs104";
+		reg = <0x2a>;
+	};
+};
+
