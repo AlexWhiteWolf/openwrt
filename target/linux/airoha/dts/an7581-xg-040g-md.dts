@@ -209,47 +209,47 @@
 	};
 
 	mdio {
-		ethernet-phy@a {
+		ethernet-phy@1 {
 			status = "okay";
 			pinctrl-names = "gbe-led";
 			pinctrl-0 = <&gswp2_led0_pins>;
 
 			leds {
-				led@0 {
+				gsw-phy1-led0@0 {
+					reg = <0x00>;
+					function = LED_FUNCTION_LAN;
 					status = "okay";
 					active-low;
-					function = LED_FUNCTION_LAN;
-					color = <LED_COLOR_ID_BLUE>;
 				};
 			};
 		};
 
-		ethernet-phy@b {
+		ethernet-phy@2 {
 			status = "okay";
 			pinctrl-names = "gbe-led";
 			pinctrl-0 = <&gswp3_led0_pins>;
 
 			leds {
-				led@0 {
+				gsw-phy2-led0@0 {
+					reg = <0x00>;
+					function = LED_FUNCTION_LAN;
 					status = "okay";
 					active-low;
-					function = LED_FUNCTION_LAN;
-					color = <LED_COLOR_ID_BLUE>;
 				};
 			};
 		};
 
-		ethernet-phy@c {
+		ethernet-phy@3 {
 			status = "okay";
 			pinctrl-names = "gbe-led";
 			pinctrl-0 = <&gswp4_led0_pins>;
 
 			leds {
-				led@0 {
+				gsw-phy3-led0@0 {
+					reg = <0x00>;
+					function = LED_FUNCTION_LAN;
 					status = "okay";
 					active-low;
-					function = LED_FUNCTION_LAN;
-					color = <LED_COLOR_ID_BLUE>;
 				};
 			};
 		};
